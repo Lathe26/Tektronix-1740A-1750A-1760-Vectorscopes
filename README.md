@@ -702,7 +702,7 @@ d fffb00, 0x20
 d ffe000, 0x400
 ```
 
-In addition to displaying the contents of memory, it is possible to upload a large amount of data into SRAM or NVRAM.  This can be achieved by pasting 16-bit hexadecimal number, one number per line, into a terminal after executing the `m` command.  This assumes that correct settings have been correctly set as specified in the **RS-232 Serial Communication** section.  For example, the following 16-bit...
+In addition to displaying the contents of memory, it is possible to upload a large amount of data into SRAM or NVRAM.  This can be achieved by pasting 16-bit hexadecimal number, one number per line, into a terminal after executing the `m` command.  This assumes that correct settings have been correctly set as specified in the **RS-232 Serial Communication** section.  For example, the following 16-bit data...
 
 ```
 0001
@@ -715,7 +715,7 @@ In addition to displaying the contents of memory, it is possible to upload a lar
 0e0f
 ```
 
-... can uploaded into SRAM by being pasted in the to terminal after executing `m 10000`, followed by a ^D.  During the pasting operation, the text display in the terminal may appear garbled.  Output from this example, followed by the `d` display command, is similar to:
+... can uploaded into SRAM by being pasted in the to terminal after executing `m 10000` and then ended with a ^D.  During the pasting operation, the text display in the terminal may appear garbled.  Output from this example, followed by the `d` display command, is similar to:
 
 ```
 [Boot]: m 10000
